@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hulu Guday</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Hulu Guday</h1>
+        <div class="header-actions">
+            <button id="view-toggle" aria-label="Toggle View">
+                <i class="fas fa-th-large"></i>
+            </button>
+            <button id="dark-mode-toggle" aria-label="Toggle Dark Mode">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </header>
+    <main>
+        <!-- Featured Websites section will be inserted here by JavaScript -->
+        <section class="filters">
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Search websites...">
+                <div id="autocomplete-results" class="autocomplete-results"></div>
+            </div>
+            <select id="category-filter">
+                <option value="">All Categories</option>
+                <!-- Categories will be dynamically inserted here -->
+            </select>
+        </section>
+        <section id="websites-container" class="websites-grid">
+            <!-- Website information will be dynamically inserted here -->
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Website Information Hub. All rights reserved.</p>
+    </footer>
+    <div class="floating-menu">
+        <button id="random-website" aria-label="Random Website">
+            <i class="fas fa-random"></i>
+        </button>
+        <button id="back-to-top" aria-label="Back to Top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
